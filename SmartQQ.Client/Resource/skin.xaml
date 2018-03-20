@@ -1,0 +1,97 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DataTemplate x:Key="FriendList">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="130"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Grid.RowSpan="2" Source="QQImages/basicQQ.jpg"/>  <!--好友列表的头像图片-->
+            <TextBlock Text="{Binding Path=Alias}" Margin="5,1,0,1" Grid.Column="1" Grid.Row="0" TextAlignment="Left"/>
+            <TextBlock Text="{Binding Path=Nickname}" Margin="5,1,0,1" Grid.Column="1" Grid.Row="1" TextAlignment="Left"/>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="FriendListTemplate">
+        <WrapPanel> 
+            <TextBlock Text="{Binding Path=Name}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="[" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="{Binding Path=OnlineFriendNum}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="/" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="{Binding Path=TotalFriendNum}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="]" TextAlignment="Left"></TextBlock>
+        </WrapPanel>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="GroupList">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="130"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Grid.RowSpan="2" Source="QQImages/basicQQ.jpg"/>
+            <!--好友列表的头像图片-->
+            <TextBlock Text="{Binding Path=Alias}" Margin="5,1,0,1" Grid.Column="1" Grid.Row="0" TextAlignment="Left"/>
+            <TextBlock Text="{Binding Path=Nickname}" Margin="5,1,0,1" Grid.Column="1" Grid.Row="1" TextAlignment="Left"/>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="GroupListTemplate">
+        <WrapPanel>
+            <TextBlock Text="{Binding Path=Name}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="[" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="{Binding Path=OnlineFriendNum}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="/" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="{Binding Path=TotalFriendNum}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="]" TextAlignment="Left"></TextBlock>
+        </WrapPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DiscussionList">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="130"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Grid.RowSpan="2" Source="QQImages/basicQQ.jpg"/>
+            <!--好友列表的头像图片-->
+            <TextBlock Text="{Binding Path=Alias}" Margin="5,1,0,1" Grid.Column="1" Grid.Row="0" TextAlignment="Left"/>
+            <TextBlock Text="{Binding Path=Nickname}" Margin="5,1,0,1" Grid.Column="1" Grid.Row="1" TextAlignment="Left"/>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="DiscussionListTemplate">
+        <WrapPanel>
+            <TextBlock Text="{Binding Path=Name}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="[" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="{Binding Path=OnlineFriendNum}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="/" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="{Binding Path=TotalFriendNum}" TextAlignment="Left"></TextBlock>
+            <TextBlock Text="]" TextAlignment="Left"></TextBlock>
+        </WrapPanel>
+    </DataTemplate>
+    
+    <Style x:Key="TextBlockStateStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily" Value="宋体"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="#FF000000"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="BitmapEffect">
+                    <Setter.Value>
+                        <OuterGlowBitmapEffect GlowSize="3" GlowColor="#FFFFFF"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

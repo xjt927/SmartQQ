@@ -1,0 +1,20 @@
+﻿<Window x:Class="SmartQQ.Client.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="扫码登录" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="请使用手机QQ扫一扫二维码，实现登录。" FontSize="18" FontFamily="宋体"   Background="Aqua"  HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1" Loaded="Grid_Loaded">
+            <Image Width="auto" Height="auto" MaxHeight="200" Source="../Resource/ptqrshow.png"></Image>
+        </Grid>
+    </Grid>
+</Window>
