@@ -20,10 +20,10 @@
 <img src="https://github.com/xjt927/SmartQQ/blob/master/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180320175816.png" height="400"> 
 
 #  感谢
-https://github.com/TJYSunset/DumbQQ 
+https://github.com/TJYSunset/DumbQQ  
 https://github.com/ScienJus/smartqq  
-https://github.com/MahApps/MahApps.Metro  
-以及感谢所有开源者的无私分享。  
+https://github.com/MahApps/MahApps.Metro  
+ **以及感谢所有开源者的无私分享。**
 
 # 注意
 - 该项目是兴趣使然开发的，其中参考了其他一些开源项目，在此谢他们。  
