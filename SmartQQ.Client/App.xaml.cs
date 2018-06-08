@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
@@ -17,8 +19,13 @@ namespace SmartQQ.Client
             this.DispatcherUnhandledException += new DispatcherUnhandledExceptionEventHandler(Application_DispatcherUnhandledException);
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
         }
+
+
         protected override void OnStartup(StartupEventArgs e)
         {
+            //CultureInfo currentCultureInfo = CultureInfo.CurrentCulture;
+           // Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("zh-cn");
+
             // get the current app style (theme and accent) from the application
             // you can then use the current theme and custom accent instead set a new theme
             Tuple<AppTheme, Accent> appStyle = ThemeManager.DetectAppStyle(Application.Current);

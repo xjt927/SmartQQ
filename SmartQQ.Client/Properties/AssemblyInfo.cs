@@ -5,12 +5,12 @@ using System.Windows;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("SmartQQ")]
-[assembly: AssemblyDescription("SmartQQ")]
+[assembly: AssemblyTitle("SmartQQ by xjt")]
+[assembly: AssemblyDescription("SmartQQ by xjt")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("COM.XJT.SmartQQ")]
-[assembly: AssemblyProduct("SmartQQ")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyProduct("SmartQQ by xjt")]
+[assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

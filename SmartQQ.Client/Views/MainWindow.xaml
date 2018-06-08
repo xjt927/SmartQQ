@@ -11,11 +11,25 @@
                       WindowStartupLocation="CenterScreen"
                       GlowBrush="{DynamicResource AccentColorBrush}"
                       WindowTransitionsEnabled="False"
-        Title="MainWindow" Height="600" Width="700" Loaded="Window_Loaded">
-    
+        Title="SmartQQ" Height="600" Width="700" Loaded="Window_Loaded">
+ 
+
     <Control.Resources>
-        <Thickness x:Key="ControlMargin">5</Thickness>
-    </Control.Resources> 
+        <ResourceDictionary>
+            <Thickness x:Key="ControlMargin">5</Thickness>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resource/skin.xaml"/>
+                 <!--MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive!--> 
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                 <!--Accent and AppTheme setting--> 
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Control.Resources>
+    
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>

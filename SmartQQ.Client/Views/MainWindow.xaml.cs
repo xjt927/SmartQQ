@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,6 +19,8 @@ namespace SmartQQ.Client.Views
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        public static String ddd = "";
+
         public MainWindow()
         {
             DataContext = new MainWindowViewModel();
@@ -365,6 +368,16 @@ namespace SmartQQ.Client.Views
                 QuartzService.Instance.SchedulerUnscheduleAllJobs();
                 Tools.LogAction("已关闭定时发送");
             }
+        }
+    }
+
+    public   class GetCurrentCulture
+    {
+        public static CultureInfo CultureInfo = CultureInfo.CurrentCulture;
+
+        public static CultureInfo  CurrentCulture()
+        {
+            return CultureInfo.CurrentCulture;
         }
     }
 }
