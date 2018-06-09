@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using System.Windows.Media.Imaging;
 
 namespace SmartQQ.Client
 {
@@ -19,7 +21,8 @@ namespace SmartQQ.Client
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            string path = System.AppDomain.CurrentDomain.BaseDirectory+"/Resource/ptqrshow.png";
+            sqImage.Source = new BitmapImage(new Uri(path, UriKind.RelativeOrAbsolute));
         }
     }
 }

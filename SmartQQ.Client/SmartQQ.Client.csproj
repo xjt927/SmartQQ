@@ -225,9 +225,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resource\ptqrshow.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resource\SmartQQ设计思路.txt" />
   </ItemGroup>
   <ItemGroup>

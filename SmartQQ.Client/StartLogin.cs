@@ -74,7 +74,7 @@ namespace SmartQQ.Client
         }
 
         private static void QrLogin()
-        {
+        { 
             while (true)
                 switch (Client.Start(path => Process.Start(path)))
                 {
@@ -91,6 +91,7 @@ namespace SmartQQ.Client
                         return;
                 }
         }
+        
         private static void ThreadStartingPoint()
         { 
             MainWindow mainWindow = new MainWindow();

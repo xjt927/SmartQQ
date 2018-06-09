@@ -14,7 +14,7 @@
             <TextBlock Text="请使用手机QQ扫一扫二维码，实现登录。" FontSize="18" FontFamily="宋体"   Background="Aqua"  HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         </Grid>
         <Grid Grid.Row="1" Loaded="Grid_Loaded">
-            <Image Width="auto" Height="auto" MaxHeight="200" Source="../Resource/ptqrshow.png"></Image>
+            <Image Name="sqImage" Width="auto" Height="auto" MaxHeight="200" ></Image>
         </Grid>
     </Grid>
 </Window>

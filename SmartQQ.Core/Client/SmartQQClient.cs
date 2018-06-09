@@ -601,7 +601,7 @@ namespace SmartQQ.Core.Client
                 Directory.CreateDirectory(filePath2);
             }
             File.WriteAllBytes(filePath, _);
-
+             
             qrCodeDownloadedCallback(filePath);
         });
 
