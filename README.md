@@ -23,9 +23,8 @@
 https://github.com/TJYSunset/DumbQQ  
 https://github.com/ScienJus/smartqq  
 https://github.com/MahApps/MahApps.Metro  
- **以及感谢所有开源者的无私分享。**
 
 # 注意
-- 该项目是兴趣使然开发的，其中参考了其他一些开源项目，在此谢他们。  
+- 该项目是兴趣使然开发的。  
 - 我把好友qq、群消息等接收信息功能注释掉了，如果有需要你可以自己加上。
 - 开发完成后没有经过严格测试，只是简单实现发送功能，如有问题请联系我，会尽量修改。
